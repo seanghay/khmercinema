@@ -1,0 +1,28 @@
+{
+  "name": "khmercinema",
+  "version": "0.1.0",
+  "description": "A command line tool to retrieve movies from Major Cineplex, Legend Cinema and Prime Cineplex.",
+  "author": {
+    "name": "Seanghay Yath",
+    "email": "Seanghay.dev@gmail.com"
+  },
+  "type": "module",
+  "repository": "seanghay/khmercinema",
+  "license": "MIT",
+  "bin": "bin/app.js",
+  "keywords": [
+    "khmer",
+    "cambodia",
+    "majorcineplex",
+    "legendcinema",
+    "primecineplex"
+  ],
+  "dependencies": {
+    "@clack/prompts": "^0.7.0",
+    "axios": "^1.5.1",
+    "date-fns": "^2.30.0",
+    "javascript-time-ago": "^2.5.9",
+    "openurl": "^1.1.1"
+  },
+  "files": ["bin", "src"]
+}
