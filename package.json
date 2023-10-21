@@ -10,6 +10,7 @@
   "repository": "seanghay/khmercinema",
   "license": "MIT",
   "bin": "bin/app.js",
+  "main": "./src/request.js",
   "keywords": [
     "khmer",
     "cambodia",

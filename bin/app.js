@@ -79,7 +79,6 @@ await select({
 	options: tt,
 });
 
-
 const viewWeb = await confirm({
 	message: "View on the Web",
 	initialValue: true,
