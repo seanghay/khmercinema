@@ -72,12 +72,14 @@ if (isCancel(locationId)) {
 	process.exit(0)
 }
 
-
 const tt = locations[locationId].times()
-await select({
-	message: "Showtimes",
-	options: tt,
-});
+
+if (tt.length > 0) {
+	await select({
+		message: "Showtimes",
+		options: tt,
+	});
+}
 
 const viewWeb = await confirm({
 	message: "View on the Web",

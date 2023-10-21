@@ -42,7 +42,7 @@ export async function movieList(theaterId) {
 
 			const hour = Math.floor(item.runTime / 60);
 			const minute = item.runTime % 60;
-			
+
 			return {
 				value: i,
 				label: `[${date}] ${item.title}, ${tag}`,
@@ -84,7 +84,6 @@ export async function locationList(theaterId, movieId, date) {
 							times.push(`[${t.name}${mode}] ${session}`)
 						}
 					}
-
 					return times.map((item, id) => ({ value: id, label: item }));
 				}
 			})
